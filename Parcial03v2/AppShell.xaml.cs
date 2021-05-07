@@ -18,7 +18,7 @@ namespace Parcial03v2
             Routing.RegisterRoute(nameof(ConfiguracionesGenerales), typeof(ConfiguracionesGenerales));
             Routing.RegisterRoute(nameof(AgregarSerie), typeof(AgregarSerie));
             Routing.RegisterRoute(nameof(ModificarPerfil), typeof(ModificarPerfil));
-            Routing.RegisterRoute(nameof(Preferencias), typeof(Preferencias));
+            Routing.RegisterRoute(nameof(Agregar_Manga), typeof(Agregar_Manga));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

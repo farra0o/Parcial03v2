@@ -112,9 +112,9 @@
         <ShellContent Route="AgregarSerie" ContentTemplate="{DataTemplate local:AgregarSerie}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Preferencias" Icon="ba01.png">
+    <FlyoutItem Title="AgregarManga" Icon="ba01.png">
 
-        <ShellContent Route="Preferencias" ContentTemplate="{DataTemplate local:Preferencias}" />
+        <ShellContent Route="Mangas" ContentTemplate="{DataTemplate local:Agregar_Manga}" />
     </FlyoutItem>
 
     

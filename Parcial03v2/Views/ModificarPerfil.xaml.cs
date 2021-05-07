@@ -16,5 +16,16 @@ namespace Parcial03v2.Views
         {
             InitializeComponent();
         }
+
+        private async void cambios(object sender, EventArgs e)
+        {
+
+            DisplayAlert("Configuraciones", "Cambios Guardados", "ok");
+
+
+            await Shell.Current.GoToAsync("//main");
+
+
+        }
     }
 }

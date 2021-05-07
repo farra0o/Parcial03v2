@@ -10,11 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace Parcial03v2.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Preferencias : ContentPage
+    public partial class Agregar_Manga : ContentPage
     {
-        public Preferencias()
+        public Agregar_Manga()
         {
             InitializeComponent();
+        }
+
+        private async void cambios(object sender, EventArgs e)
+        {
         }
     }
 }

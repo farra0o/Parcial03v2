@@ -31,7 +31,7 @@ namespace Parcial03v2.Views
 
         private async void Ingresar(object sender, EventArgs e)
         {
-           if 
+           
             await Shell.Current.GoToAsync("//main");
         }
     }

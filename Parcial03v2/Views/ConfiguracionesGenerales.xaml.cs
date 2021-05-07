@@ -16,5 +16,10 @@ namespace Parcial03v2.Views
         {
             InitializeComponent();
         }
+
+        private void Cambios2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

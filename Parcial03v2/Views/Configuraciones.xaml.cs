@@ -16,5 +16,7 @@ namespace Parcial03v2.Views
         {
             InitializeComponent();
         }
+
+       
     }
 }
