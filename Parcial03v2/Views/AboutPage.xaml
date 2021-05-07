@@ -11,7 +11,7 @@
     
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="Accent">#CCec2323</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -28,22 +28,22 @@
             </StackLayout>
         </StackLayout>
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+            <StackLayout BackgroundColor=" #ccea8532" Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Label Text="Asuka Langley" FontSize="Title"/>
-                <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
+                <Label  Text="Second Children elegida por el Instituto Marduk, designada como piloto del Evangelion Unidad 02. Destacan de su aspecto su pelo rojo llameante, que recoge con sus Clips A10, y sus ojos azules, posiblemente provenientes de   su herencia genética alemana. Su mejor amiga es su compañera y representante de clase, Hikari Horaki." FontSize="16" Padding="0,0,0,0"/>
                 <Label FontSize="16" Padding="0,24,0,0">
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Learn more at "/>
-                                <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                                <Span Text="Learn more at: "/>
+                                <Span Text="https://evangelion.fandom.com/es/wiki/Asuka_Langley_Sohryu" FontAttributes="Bold"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
                 <Button Margin="0,10,0,0" Text="Learn more"
                         Command="{Binding OpenWebCommand}"
-                        BackgroundColor="{StaticResource Primary}"
+                        BackgroundColor="#B3291d2d"
                         TextColor="White" />
             </StackLayout>
         </ScrollView>

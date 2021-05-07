@@ -9,7 +9,7 @@ namespace Parcial03v2.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
+            Title = "MAIN";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
             RestartCommand = new Command(() =>
             {

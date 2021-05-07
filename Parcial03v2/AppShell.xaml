@@ -14,7 +14,7 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.BackgroundColor" Value="#ea8532" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
@@ -93,16 +93,29 @@
 
    
 
-    <FlyoutItem Title="main" Icon="icon_about.png">
+    <FlyoutItem Title="main" Icon="p1.png">
         <ShellContent Route="main" ContentTemplate="{DataTemplate local:AboutPage}" />
         
     </FlyoutItem>
-    <FlyoutItem Title="Item" Icon="icon_about.png">
-        
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
+    
+    <FlyoutItem Title="Configuraciones" Icon="conf.png">
+
+        <ShellContent Route="Configuraciones" ContentTemplate="{DataTemplate local:ConfiguracionesGenerales}" />
     </FlyoutItem>
 
-   
+    <FlyoutItem Title="ModificarPerfil" Icon="icon_about.png">
+
+        <ShellContent Route="ModificarPerfil" ContentTemplate="{DataTemplate local:ModificarPerfil}" />
+    </FlyoutItem>
+    <FlyoutItem Title="AgregarSerie" Icon="Anime.png">
+
+        <ShellContent Route="AgregarSerie" ContentTemplate="{DataTemplate local:AgregarSerie}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Preferencias" Icon="ba01.png">
+
+        <ShellContent Route="Preferencias" ContentTemplate="{DataTemplate local:Preferencias}" />
+    </FlyoutItem>
 
     
 

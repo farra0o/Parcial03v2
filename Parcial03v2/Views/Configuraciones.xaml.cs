@@ -10,20 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Parcial03v2.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class forget : ContentPage
+    public partial class Configuraciones : ContentPage
     {
-        public forget()
+        public Configuraciones()
         {
             InitializeComponent();
-        }
-
-        private async void Envio(object sender, EventArgs e)
-        {
-            DisplayAlert("Reset Password", "Revisa tu correo para cambiar la contraseña", "ok");
-
-
-            await Shell.Current.GoToAsync("//Login");
-
         }
     }
 }

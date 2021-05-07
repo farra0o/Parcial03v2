@@ -15,11 +15,16 @@ namespace Parcial03v2
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(Registro),  typeof(Registro));
             Routing.RegisterRoute(nameof(forget), typeof(forget));
+            Routing.RegisterRoute(nameof(ConfiguracionesGenerales), typeof(ConfiguracionesGenerales));
+            Routing.RegisterRoute(nameof(AgregarSerie), typeof(AgregarSerie));
+            Routing.RegisterRoute(nameof(ModificarPerfil), typeof(ModificarPerfil));
+            Routing.RegisterRoute(nameof(Preferencias), typeof(Preferencias));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync("//Login");
+
         }
     }
 }
