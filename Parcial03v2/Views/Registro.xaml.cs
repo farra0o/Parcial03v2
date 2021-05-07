@@ -22,7 +22,7 @@ namespace Parcial03v2.Views
             {
 
                 DisplayAlert("Registro Completo", "Bienvenido", "ok");
-                await Shell.Current.GoToAsync("//main");
+                await Shell.Current.GoToAsync("//Login");
             }
 
             else
@@ -30,4 +30,5 @@ namespace Parcial03v2.Views
                 DisplayAlert("Datos erróneos", "por favor llenar todos los campos", "OK");
             }
         }
+    }
 }

@@ -37,7 +37,8 @@
                     FontSize="15"
                     Text="{Binding NameTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
-                    TextColor="White"/>
+                    TextColor="White"
+                        x:Name="a"/>
 
                 <Frame Padding="0,4,0,4" HasShadow="True">
                         <Button Text="Enviar" 
@@ -47,7 +48,8 @@
                             TextColor="#f14235" 
                             FontSize="15" 
                             Command="{Binding RegistroCommand}"
-                            Clicked="Envio" />
+                            Clicked="Envio"
+                             />
                     </Frame>
                 </StackLayout>
 

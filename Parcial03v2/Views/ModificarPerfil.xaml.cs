@@ -20,10 +20,17 @@ namespace Parcial03v2.Views
         private async void cambios(object sender, EventArgs e)
         {
 
-            DisplayAlert("Configuraciones", "Cambios Guardados", "ok");
+            if (!string.IsNullOrEmpty(a.ToString()) && !string.IsNullOrEmpty(b.ToString()) && !string.IsNullOrEmpty(c.ToString()) && !string.IsNullOrEmpty(d.Text))
+            {
 
+                DisplayAlert("Configuraciones", "Cambios Guardados", "ok");
+                await Shell.Current.GoToAsync("//main");
+            }
 
-            await Shell.Current.GoToAsync("//main");
+            else
+            {
+                DisplayAlert("Datos erróneos", "por favor llenar todos los campos", "OK");
+            }
 
 
         }

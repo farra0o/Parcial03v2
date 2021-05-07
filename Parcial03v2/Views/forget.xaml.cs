@@ -19,10 +19,18 @@ namespace Parcial03v2.Views
 
         private async void Envio(object sender, EventArgs e)
         {
-            DisplayAlert("Reset Password", "Revisa tu correo para cambiar la contraseña", "ok");
+            if (!string.IsNullOrEmpty(a.Text) )
+            {
 
+                DisplayAlert("Correo enviado", "revisar correo y cambiar contraseña", "ok");
+                await Shell.Current.GoToAsync("//Login");
+            }
 
-            await Shell.Current.GoToAsync("//Login");
+            else
+            {
+                DisplayAlert("Correo invalido", "por favor llenar todos los campos correctamente", "OK");
+            }
+
 
         }
     }
