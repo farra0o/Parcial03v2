@@ -31,8 +31,18 @@ namespace Parcial03v2.Views
 
         private async void Ingresar(object sender, EventArgs e)
         {
-           
-            await Shell.Current.GoToAsync("//main");
+
+            if (!string.IsNullOrEmpty(a.Text) && !string.IsNullOrEmpty(b.Text))
+            {
+
+                DisplayAlert("Bienvenido", "Gracias por utilizarnos", "ok");
+                await Shell.Current.GoToAsync("//main");
+            }
+
+            else
+            {
+                DisplayAlert("Datos erróneos", "por favor llenar todos los campos", "OK");
+            }
         }
     }
 }

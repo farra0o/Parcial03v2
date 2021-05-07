@@ -61,7 +61,8 @@
                     FontSize="15"
                     Text="{Binding NameTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
-                    TextColor="White"/>
+                    TextColor="White"
+                        x:Name="a"/>
 
                 </Frame>
             </StackLayout>
@@ -89,7 +90,8 @@
                     FontSize="15"
                     Text="{Binding PassTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
-                    TextColor="White"/>
+                    TextColor="White"
+                        x:Name="b"/>
 
 
                 </Frame>

@@ -18,11 +18,16 @@ namespace Parcial03v2.Views
         }
         private async void RegistroCompleto(object sender, EventArgs e)
         {
-            DisplayAlert("Registro", "Haz confirmado tu registro", "ok");
+            if (!string.IsNullOrEmpty(a.Text) && !string.IsNullOrEmpty(b.Text) && !string.IsNullOrEmpty(c.Text))
+            {
 
+                DisplayAlert("Registro Completo", "Bienvenido", "ok");
+                await Shell.Current.GoToAsync("//main");
+            }
 
-            await Shell.Current.GoToAsync("//Login");
-
+            else
+            {
+                DisplayAlert("Datos erróneos", "por favor llenar todos los campos", "OK");
+            }
         }
-    }
 }

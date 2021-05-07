@@ -17,8 +17,21 @@ namespace Parcial03v2.Views
             InitializeComponent();
         }
 
-        private void Cambios2(object sender, EventArgs e)
+        private async void Cambios2(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(a.ToString()) && !string.IsNullOrEmpty(b.ToString()) && !string.IsNullOrEmpty(c.ToString()) && !string.IsNullOrEmpty(d.Text))
+            {
+
+                DisplayAlert("Configuraciones", "Cambios Guardados", "ok");
+                await Shell.Current.GoToAsync("//main");
+            }
+
+            else
+            {
+                DisplayAlert("Datos erróneos", "por favor llenar todos los campos", "OK");
+            }
+
+
 
         }
     }

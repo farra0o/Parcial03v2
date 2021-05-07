@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Parcial03v2.Views.Agregar_Manga"
-             BackgroundImageSource="BG03.png">
+             BackgroundImageSource="BG06.png">
     <ContentPage.Content>
         <ScrollView>
             <Grid RowSpacing="0" BackgroundColor="#CC000000 ">
@@ -26,14 +26,14 @@
                 </StackLayout>
 
                 <StackLayout Grid.Row="2" HorizontalOptions="Center">
-                    <Label Text ="Perfil" TextColor="white" HorizontalTextAlignment="Center" FontSize="Large" WidthRequest="300"/>
+                    <Label Text ="Manga" TextColor="white" HorizontalTextAlignment="Center" FontSize="Large" WidthRequest="300"/>
 
 
                 </StackLayout>
 
                 <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" Padding="10" >
                     <Label
-                    Text="Cambiar Email"
+                    Text="Nombre"
                    
                     TextColor="white"
                     />
@@ -43,21 +43,22 @@
                     CornerRadius="7"
                     BackgroundColor="#292929">
                         <Entry
-                    Placeholder="Gmaes@gmail.com"
+                    Placeholder="To Love ru"
                     PlaceholderColor="White"
-                    Keyboard="Email"
+                    
                     MaxLength="25"
                     FontSize="15"
                     Text="{Binding EmailTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
-                    TextColor="White"/>
+                    TextColor="White"
+                     x:Name="a"       />
                     </Frame>
                 </StackLayout>
 
                 <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" Padding="10" >
 
                     <Label
-                    Text="Cambioar Contraseña"
+                    Text="Editor"
                     FontSize="13"
                     TextColor="white"
                     />
@@ -70,14 +71,15 @@
                     >
 
                         <Entry
-                    Placeholder="******************"
+                    Placeholder="Mad House"
                     PlaceholderColor="White"
                     MaxLength="25"
-                    IsPassword="True"
+                   
                     FontSize="15"
                     Text="{Binding PassTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
-                    TextColor="White"/>
+                    TextColor="White"
+                             x:Name="b"/>
 
                     </Frame>
 
@@ -85,7 +87,7 @@
 
                 <StackLayout Grid.Row="5" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" Padding="10">
                     <Label
-                     Text="Cambiar Usuario"
+                     Text="Autor"
                      FontSize="13"
                      TextColor="White"/>
 
@@ -97,21 +99,22 @@
                     >
 
                         <Entry
-                    Placeholder="Perone"
+                    Placeholder="Nishio Ishin"
                         PlaceholderColor="White"
                     MaxLength="25"
                     Keyboard="Text"
                     FontSize="15"
                     Text="{Binding NameTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
-                    TextColor="White"/>
+                    TextColor="White"
+                             x:Name="c"/>
 
                     </Frame>
                 </StackLayout>
 
                 <StackLayout Grid.Row="6" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" Padding="10" >
                     <Label
-                    Text="Edad"
+                    Text="Tomos"
                    
                     TextColor="white"
                     />
@@ -126,7 +129,7 @@
                     Keyboard="Numeric"
                     MaxLength="2"
                     FontSize="15"
-                   
+                    x:Name="d"
                     Text="{Binding EmailTxt, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnabledTxt}"
                     TextColor="White"/>
